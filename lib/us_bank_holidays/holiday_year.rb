@@ -39,7 +39,8 @@ module UsBankHolidays
           columbus_day,
           veterans_day,
           thanksgiving,
-          christmas
+          christmas,
+          christmas2
         ]
         if Date.new(year + 1, 1, 1).saturday?
           holidays << Date.new(year, 12, 31)
@@ -105,6 +106,9 @@ module UsBankHolidays
 
         # December 25
         @christmas        = roll_nominal(Date.new(year, 12, 25))
+
+        # December 26
+        @christmas        = roll_nominal(Date.new(year, 12, 26))
       end
 
       # Figures out where to roll the given nominal date. If it's a Saturday, assumes
