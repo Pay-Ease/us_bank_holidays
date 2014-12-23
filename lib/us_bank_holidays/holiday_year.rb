@@ -108,7 +108,7 @@ module UsBankHolidays
         @christmas        = roll_nominal(Date.new(year, 12, 25))
 
         # December 26
-        @christmas        = roll_nominal(Date.new(year, 12, 26))
+        @christmas2        = roll_nominal(Date.new(year, 12, 26))
       end
 
       # Figures out where to roll the given nominal date. If it's a Saturday, assumes
